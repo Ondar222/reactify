@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import NewsBanner from "../../components/NewsBanner/NewsBanner";
+import React from "react";
+import NewsBanner from "./../../components/NewsBanner/NewsBanner";
 import styles from "./styles.module.css";
-import { getNews } from "../../api/apiNews";
-import NewList from "../../components/NewList/NewList";
+import { getNews } from './../../api/apiNews';
+import NewList from "./../../components/NewList/NewList"
 
 const Main = () => {
   const [news, setNews] = useState([]);
